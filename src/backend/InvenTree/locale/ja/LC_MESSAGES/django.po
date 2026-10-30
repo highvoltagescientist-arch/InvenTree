@@ -1,4 +1,4 @@
-msgid ""
+﻿msgid ""
 msgstr ""
 "Project-Id-Version: inventree\n"
 "Report-Msgid-Bugs-To: \n"
@@ -1017,19 +1017,19 @@ msgstr "完成したアイテムの保管場所を選択"
 
 #: build/models.py:348
 msgid "Build Quantity"
-msgstr "数量"
+msgstr "製造予定数量"
 
 #: build/models.py:351
 msgid "Number of stock items to build"
-msgstr "構築するストックアイテムの数"
+msgstr "製造する完成品の予定数量"
 
 #: build/models.py:355
 msgid "Completed items"
-msgstr "完成品"
+msgstr "完成済み数量"
 
 #: build/models.py:357
 msgid "Number of stock items which have been completed"
-msgstr "完了した在庫アイテムの数"
+msgstr "完成処理した製造品の数量"
 
 #: build/models.py:361
 msgid "Build Status"
@@ -1401,51 +1401,51 @@ msgstr "完了していないビルド出力を削除します。"
 
 #: build/serializers.py:702
 msgid "Not permitted"
-msgstr "不可"
+msgstr "超過分を処理するまで完了しない"
 
 #: build/serializers.py:703
 msgid "Accept as consumed by this build order"
-msgstr "このビルド・オーダーで消費されるものとして受け入れます。"
+msgstr "余分に引き当てた在庫品も、この製造オーダーで消費済みとして処理する"
 
 #: build/serializers.py:704
 msgid "Deallocate before completing this build order"
-msgstr "このビルドオーダーを完了する前に割り当てを解除します。"
+msgstr "余分な在庫の引当を解除して完了する"
 
 #: build/serializers.py:731
 msgid "Overallocated Stock"
-msgstr "総合在庫"
+msgstr "過剰引当の処理"
 
 #: build/serializers.py:734
 msgid "How do you want to handle extra stock items assigned to the build order"
-msgstr "製造オーダーに割り当てられた余分な在庫品をどのように処理しますか？"
+msgstr "製造オーダーに必要な数を超えて引き当てた在庫品を、どのように処理しますか？"
 
 #: build/serializers.py:745
 msgid "Some stock items have been overallocated"
-msgstr "一部の在庫品目は全体的に配分されています。"
+msgstr "一部の在庫品が必要数を超えて引き当てられています。"
 
 #: build/serializers.py:750
 msgid "Accept Unallocated"
-msgstr "未割り当ての受け入れ"
+msgstr "未引当の部品があっても完了"
 
 #: build/serializers.py:752
 msgid "Accept that stock items have not been fully allocated to this build order"
-msgstr "在庫アイテムがこのビルド・オーダーに完全に割り当てられていないことを受け入れます。"
+msgstr "部品表で必要な在庫品がすべて引き当てられていなくても、この製造オーダーを完了します。"
 
 #: build/serializers.py:763
 msgid "Required stock has not been fully allocated"
-msgstr "必要在庫の配分が完了していません"
+msgstr "部品表で必要な部品がすべて引き当てられていません。"
 
 #: build/serializers.py:768 order/serializers.py:548 order/serializers.py:1837
 msgid "Accept Incomplete"
-msgstr "インコンプリートの受け入れ"
+msgstr "予定数量未達でも完了"
 
 #: build/serializers.py:770
 msgid "Accept that the required number of build outputs have not been completed"
-msgstr "必要な数のビルドアウトプットが完了していないことを受け入れます。"
+msgstr "製造オーダーの予定数量分の製造品が完成していなくても、この製造オーダーを完了します。"
 
 #: build/serializers.py:781
 msgid "Required build quantity has not been completed"
-msgstr "必要な構築数量が完了していません"
+msgstr "予定数量分の製造品がまだ完成していません。"
 
 #: build/serializers.py:793
 msgid "Build order has open child build orders"
